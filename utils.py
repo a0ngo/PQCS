@@ -21,7 +21,7 @@ def isprime(p: int, rounds: int = 10) -> bool:
     while p_copy % 2 == 0:
         p_copy /= 2
         pow_counter += 1
-    mul_remainder = p_copy  # d
+    mul_remainder = int(p_copy)  # d
 
     for i in range(rounds):
         a = random.randint(2, p - 2)
